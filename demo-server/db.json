@@ -1,0 +1,74 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "BagPack",
+        "price": 499,
+        "currency": "Rs.",
+        "imagePath": "images/backpack.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Water Bottle",
+        "price": 249,
+        "currency": "Rs.",
+        "imagePath": "images/waterbottle.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Nike Shoes",
+        "price": 2390,
+        "currency": "Rs.",
+        "imagePath": "images/nikeShoes.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Wallet",
+        "price": 719,
+        "currency": "Rs.",
+        "imagePath": "images/wallet.jpg"
+      },
+      {
+        "id": 5,
+        "name": "HP Laptop",
+        "price": 59999,
+        "currency": "Rs.",
+        "imagePath": "images/hpLaptop.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Dining Table",
+        "price": 34999,
+        "currency": "Rs.",
+        "imagePath": "images/table.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Coffee Table",
+        "price": 9990,
+        "currency": "Rs.",
+        "imagePath": "images/coffeeTable.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Sony TV",
+        "price": 299999,
+        "currency": "Rs.",
+        "imagePath": "images/sonyTV.jpg"
+      },
+      {
+        "id": 9,
+        "name": "LG Fridge",
+        "price": 24988,
+        "currency": "Rs.",
+        "imagePath": "images/LGFridge.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Sony Headset",
+        "price": 4990,
+        "currency": "Rs.",
+        "imagePath": "images/sonyHeadset.jpg"
+      }
+    ]
+  }
