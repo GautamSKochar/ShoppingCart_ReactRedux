@@ -1,4 +1,4 @@
-import { getProduct } from './eShopActions';
+import { getProductById } from './eShopActions';
 
 export const addToCart = (id) => {
     return {
@@ -15,5 +15,5 @@ export const removeFromCart = (id) => {
 };
 
 export const getCartItems = (state) => {
-    return state.eShopReducer.cart.map(id => getProduct(state, { id }))
+    return state.eShopReducer.cart.map(id => getProductById(state, { id }))
 }

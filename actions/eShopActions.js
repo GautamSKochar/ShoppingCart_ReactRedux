@@ -12,7 +12,6 @@ export const filterProducts = (filter) => {
             filterName.order = ['asc', 'desc']
             break;
         case 'low':
-            // filterName = 'SORT_LOW';
             filterName.field = ['type', 'price'];
             filterName.order = ['asc']
             break;
@@ -38,7 +37,7 @@ export function getProducts() {
     }
 }
 
-export function getProduct(state, props) {
+export function getProductById(state, props) {
     return state.eShopReducer.products.find(item => item.id == props.id)
 }
 
@@ -55,8 +54,3 @@ export function handleError(err){
         error: err
     }
 }
-
-// cart functionality
-// export function getCartItems(){
-//     return state
-// }

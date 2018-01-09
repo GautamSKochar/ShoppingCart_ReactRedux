@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --history-api-fallback",
-    "test": "jest",
+    "test": "jest --setupTestFrameworkScriptFile=raf/polyfill",
     "db": "json-server demo-server/db.json"
   },
   "keywords": [

@@ -8,10 +8,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 const history = createBrowserHistory();
 
 class Routes extends React.Component {
-    constructor(props) {
-        super();
-        // console.log(props.userName);
-    }
+    
     render() {
         return (
             <Switch>

@@ -14,7 +14,9 @@ const raf = global.requestAnimationFrame = (cb) => {
 }
 
 configure({ adapter: new Adapter() });
-const store = configureMockStore({});
+const store = configureMockStore({
+    getState: () => { }
+});
 
 
 // test('Shoud render Eshop component when visiting /', () => {
@@ -27,10 +29,13 @@ const store = configureMockStore({});
 // });
 
 test('Shoud render Cart component when visiting /cart', () => {
+    console.log('tesstttt hereeeeee');
+    console.log(store.getState);
     const component = mount(<Provider store={store}>
         <MemoryRouter initialEntries={['/cart']} initialIndex={0}>
             <Routes />
-        </MemoryRouter></Provider>
+        </MemoryRouter>
+    </Provider>
     );
     expect(component.find(Cart).length).toBe(1);
 });

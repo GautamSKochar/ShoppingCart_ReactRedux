@@ -1,6 +1,6 @@
 import reducer from "../../reducers/eShopReducer";
 import { filterProducts } from "../../actions/eShopActions";
-import _ from "lodash";
+import _orderBy from "lodash/orderBy";
 
 const products = [
     {
@@ -41,7 +41,7 @@ describe('eShopReducer', () => {
                     })
             ).toEqual(
                 {
-                    products: products,
+                    products,
                     cart: [],
                     error:""
                 })
@@ -92,7 +92,7 @@ describe('eShopReducer', () => {
                     })
             ).toEqual(
                 {
-                    products: _.orderBy(products,['type', 'name'],['asc'])
+                    products: _orderBy(products,['type', 'name'],['asc'])
                 })
         })
 

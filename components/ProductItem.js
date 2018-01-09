@@ -15,7 +15,7 @@ class ProductItem extends React.Component {
             this.props.checkInCart(this.props.index) : this.props.checkInCart;
         return (
             <div className="card" style={{ display: 'inline-block', margin: '25px' }}>
-                <img className="card-img-top" src={this.props.product.imagePath} alt="Product" />
+                <img className="card-img-top" alt="Product" src={this.props.product.imagePath} alt="Product" />
                 <div className="caption">
                     <h3>{name}</h3>
                     <div className="card-text" style={{ display: 'inline', 'lineHeight': '34px' }}>

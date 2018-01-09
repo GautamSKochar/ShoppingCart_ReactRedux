@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
-import _ from 'lodash';
 import { getProducts, filterProducts } from '../actions/eShopActions';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 import ProductItem from './ProductItem';
 import SortProducts from './SortProducts';
+import propTypes from 'prop-types';
 
 class EShop extends React.Component {
     constructor(props) {
@@ -13,6 +13,7 @@ class EShop extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.checkInCart = this.checkInCart.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.eachProduct = this.eachProduct.bind(this);
     }
     checkInCart(id) {
         return this.props.cart.findIndex(x => x == id) == -1;
@@ -49,7 +50,7 @@ class EShop extends React.Component {
                     </div>
 
                     <div className="container">
-                        {this.props.products.map(this.eachProduct.bind(this))}
+                        {this.props.products.map(this.eachProduct)}
                     </div>
                 </div>
             );
@@ -85,4 +86,9 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 }
+
+EShop.propTypes = {
+    products: propTypes.array
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(EShop)

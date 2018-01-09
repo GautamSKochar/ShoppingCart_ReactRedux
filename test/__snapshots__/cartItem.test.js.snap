@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem Component Snapshot Test 1`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "display": "inline-block",
+      "margin": "25px",
+    }
+  }
+>
+  <img
+    alt="Product"
+    className="card-img-top"
+    src="images/backpack.jpg"
+  />
+  <div
+    className="caption"
+  >
+    <h3>
+      nodejs
+    </h3>
+    <div
+      className="card-text"
+      style={
+        Object {
+          "display": "inline",
+          "lineHeight": "34px",
+        }
+      }
+    >
+      BagPack
+    </div>
+    <div
+      className="card-block"
+      style={
+        Object {
+          "float": "right",
+          "margin": "0px 5px 7px 5px",
+        }
+      }
+    >
+      <button
+        className="btn btn-danger"
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
